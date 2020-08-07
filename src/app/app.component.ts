@@ -13,14 +13,34 @@ export class AppComponent implements OnInit {
    */
   preguntaActual = undefined;
 
+  /**
+   * Contador de pregunta
+   */
+  contador=0;
 
+  /**
+   * Contador de aciertos
+   */
+  aciertos=0;
+
+  /**
+   * Colores de los botones
+   */
   colores = ["red", "blue", "yellow", "green"];
 
   marcarRespuesta (opcion) {
     if (opcion == this.preguntaActual.correcta) {
+      this.aciertos++;
       alert("Respuesta correcta")
     }else {
       alert("Respuesta incorrecta")
+    }
+
+    this.contador++;
+    if (this.contador < this.preguntas.length) {
+      this.preguntaActual = this.preguntas[this.contador];
+    } else {
+      alert("Fin del juego")
     }
   }
 
