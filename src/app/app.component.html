@@ -5,6 +5,7 @@
 <app-respuesta
     *ngFor="let respuesta of preguntaActual.respuestas; let i = index"
     [color]="colores[i]"
+    [opcion] ="i"
     [texto]="respuesta">
 </app-respuesta>
 
