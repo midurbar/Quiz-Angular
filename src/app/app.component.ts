@@ -24,6 +24,12 @@ export class AppComponent implements OnInit {
   aciertos=0;
 
   /**
+   * Inmdica que hemos llegado al final del juego. Si vale false, es que
+   * estamos jugando; si es true, fin del juego.
+   */
+  finDeJuego = false;
+
+  /**
    * Colores de los botones
    */
   colores = ["red", "blue", "yellow", "green"];
@@ -41,6 +47,7 @@ export class AppComponent implements OnInit {
       this.preguntaActual = this.preguntas[this.contador];
     } else {
       alert("Fin del juego")
+      this.finDeJuego= true;
     }
   }
 
