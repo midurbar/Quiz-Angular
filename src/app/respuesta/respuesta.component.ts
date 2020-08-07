@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-respuesta',
@@ -16,13 +16,16 @@ export class RespuestaComponent implements OnInit {
   @Input()
   color : string;
 
+  @Output()
+  seleccion = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   seleccionar() {
-    alert("Opcion "+ this.opcion)
+    this.seleccion.emit(this.opcion);
   }
 
 }
