@@ -16,6 +16,14 @@ export class AppComponent implements OnInit {
 
   colores = ["red", "blue", "yellow", "green"];
 
+  marcarRespuesta (opcion) {
+    if (opcion == this.preguntaActual.correcta) {
+      alert("Respuesta correcta")
+    }else {
+      alert("Respuesta incorrecta")
+    }
+  }
+
   /**
    * En el momento de cargar el componente, se elegira una pregunta
    * a mostrar de entre todas los disponibles en preguntas.

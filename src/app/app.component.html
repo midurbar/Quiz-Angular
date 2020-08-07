@@ -4,6 +4,7 @@
 
 <app-respuesta
     *ngFor="let respuesta of preguntaActual.respuestas; let i = index"
+    (seleccion)="marcarRespuesta($event)"
     [color]="colores[i]"
     [opcion] ="i"
     [texto]="respuesta">
