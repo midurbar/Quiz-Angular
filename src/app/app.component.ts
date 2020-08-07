@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   preguntaActual = undefined;
 
 
-  colores=['red','yellow','blue','green'];
+  colores = ["red", "blue", "yellow", "green"];
 
   /**
    * En el momento de cargar el componente, se elegira una pregunta
