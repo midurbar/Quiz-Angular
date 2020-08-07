@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
    */
   preguntaActual = undefined;
 
+
+  colores=['red','yellow','blue','green'];
+
   /**
    * En el momento de cargar el componente, se elegira una pregunta
    * a mostrar de entre todas los disponibles en preguntas.

@@ -1,9 +1,11 @@
 
 
 <app-pregunta [titulo]="preguntaActual.pregunta"></app-pregunta>
-<app-respuesta [texto]="preguntaActual.respuestas[0]"></app-respuesta>
-<app-respuesta [texto]="preguntaActual.respuestas[1]"></app-respuesta>
-<app-respuesta [texto]="preguntaActual.respuestas[2]"></app-respuesta>
-<app-respuesta [texto]="preguntaActual.respuestas[3]"></app-respuesta>
+
+<app-respuesta
+    *ngFor="let respuesta of preguntaActual.respuestas; let i = index"
+    [color]="colores[i]"
+    [texto]="respuesta">
+</app-respuesta>
 
 
