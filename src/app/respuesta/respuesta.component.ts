@@ -21,4 +21,8 @@ export class RespuestaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  seleccionar() {
+    alert("Opcion "+ this.opcion)
+  }
+
 }
