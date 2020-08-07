@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
 
   preguntas = [
     {
-      pregunta: "De que color es el caballo blanco de santiago",
+      pregunta: "¿De que color es el caballo blanco de Santiago?",
       respuestas: [
         "Blanco",
         "Negro",
@@ -73,7 +73,7 @@ export class AppComponent implements OnInit {
       correcta: 3
     },
     {
-      pregunta: "En que se año se celebraron los juegos olimpicos de tokio 2020",
+      pregunta: "¿En que se año se celebraron los juegos olimpicos de Tokio 2020?",
       respuestas: [
         "2020",
         "2021",
